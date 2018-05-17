@@ -13,14 +13,16 @@ public class dialogHolder : MonoBehavior {
   void Update(){
   
   }
-  void OnTriggerEnter2D(Collider2D other)
+  void OnTriggerStay2D(Collider2D other)
   {
     if(other.gameObject.name == "Player")
     {
-      if(Input.GetKeyDown(Keycode.Space))
+      if(Input.GetKeyDown(KeyCode.Space))
       {
         dMAn.ShowBox(dialogue);
       }
-      }
-      }
+    }
+   }
  }
+
+//stopped at 16 of vid 28
