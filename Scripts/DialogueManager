@@ -6,10 +6,23 @@ public class DialogueManager : MonoBehavior {
 
   public GameObject dBox;
   public Text dText;
+  public bool dialogActive;
   
   void Start{} {
+  
   }
   
   void Update(){
+    if(dialogActive && Input.GetKeyDown(KeyCode.Space));
+    {
+      dBox.SetActive(false);
+      dialogActive = false;
+    }
+  }
+  public void ShowBox(string dialogue)
+  {
+    dialogActive = true;
+    dBox.SetActive(true);
+    dText.text = dialogue;
   }
  }
