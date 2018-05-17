@@ -1,0 +1,15 @@
+using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+
+public class DialogueManager : MonoBehavior {
+
+  public GameObject dBox;
+  public Text dText;
+  
+  void Start{} {
+  }
+  
+  void Update(){
+  }
+ }
